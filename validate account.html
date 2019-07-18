@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function pattern(str) {
+        regexp = /^[_a-z0-9]{6,}$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    console.log(pattern("12345"));
+    console.log(pattern("_abc123"));
+    console.log(pattern("_____"));
+    console.log(pattern("123456"));
+    console.log(pattern("abcdefg"));
+
+    console.log(pattern("12345"));
+    console.log(pattern("abcde"));
+    console.log(pattern("1234_"));
+    
+</script>
+</body>
+</html>
